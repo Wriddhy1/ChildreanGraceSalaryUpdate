@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="717.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.childreangracesalaryupdate.SchoolSceneController">
+   <children>
+      <TextField fx:id="nameTextField" layoutX="113.0" layoutY="33.0" />
+      <Label layoutX="29.0" layoutY="38.0" prefHeight="17.0" prefWidth="63.0" text="Name" />
+      <Label layoutX="29.0" layoutY="83.0" prefHeight="17.0" prefWidth="63.0" text="Month" />
+      <Label layoutX="29.0" layoutY="123.0" prefHeight="17.0" prefWidth="63.0" text="Salary" />
+      <TableView fx:id="tableView" layoutX="69.0" layoutY="263.0" prefHeight="312.0" prefWidth="463.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="137.0" text="Name" />
+          <TableColumn fx:id="monthCol" prefWidth="168.0" text="Month" />
+            <TableColumn fx:id="salaryCol" prefWidth="157.0" text="Salary" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchTextField" layoutX="483.0" layoutY="33.0" />
+      <Label layoutX="394.0" layoutY="38.0" prefHeight="17.0" prefWidth="63.0" text="Search" />
+      <Button layoutX="213.0" layoutY="182.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="26.0" prefWidth="121.0" text="save" />
+      <Button layoutX="502.0" layoutY="79.0" mnemonicParsing="false" onAction="#showOnAction" prefHeight="26.0" prefWidth="121.0" text="Show" />
+      <ComboBox fx:id="salaryComboBox" layoutX="118.0" layoutY="119.0" prefWidth="150.0" />
+      <TextField fx:id="monthTextField" layoutX="113.0" layoutY="79.0" />
+   </children>
+</AnchorPane>
